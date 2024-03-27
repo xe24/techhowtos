@@ -3,7 +3,7 @@ CLOUDFLARE TUNNEL
 
 --- Definition 
     -- Formerly known as Argo Tunnel, is a service offered by Cloudflare that allows you to securely expose your
-       web server to the internet without opening up incoming ports on your firewall or configuring complex network setups.
+       local web server to the internet without opening up incoming ports on your firewall or configuring complex network setups.
 
 --- Prerequisite
     -- clouflare account
