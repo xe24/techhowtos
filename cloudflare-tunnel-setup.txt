@@ -1,0 +1,76 @@
+CLOUDFLARE TUNNEL
+---
+
+--- Definition 
+    -- Formerly known as Argo Tunnel, is a service offered by Cloudflare that allows you to securely expose your
+       web server to the internet without opening up incoming ports on your firewall or configuring complex network setups.
+
+--- Prerequisite
+    -- clouflare account
+    -- domain
+       -- bound to cloudflare DNS servers
+
+--- Setup
+    -- login
+       -- option 1
+          -- login to your cloudflare.com dashboard
+             -- navigate to Zero trust 
+             -- click on the menu link
+
+       -- option 2
+          -- login to Cloudflare one dashboard
+             -- url: https://one.dash.cloudflare.com
+
+    -- Create Tunnel
+       -- navigate to Networks
+          -- select Tunnels
+             -- click on Create tunnel
+             -- select your connector
+             -- click Next
+             -- enter name for the tunnel in box
+             -- click Save tunnel
+
+    -- Configuration
+       -- choose your environment
+          -- windows
+          -- mac
+          -- debian
+          -- redhat
+          -- docker
+
+       -- Connect your tunnel to Cloudflare
+          -- copy one of the commands to your terminal(linux) or command prompt(windows)
+          -- run it and wait for the installation to complete
+
+       -- Configure public hostname 
+          -- navigate to Networks
+             --  click on Tunnels
+                 -- select your tunnel
+                    -- click configure
+                    -- click on Public hostname tab
+                    -- click on Add a public hostname
+                       -- select domain
+                       -- select HTTP under Type
+                          -- Type
+                             -- HTTP
+
+                       -- Enter URL for your local device
+                          -- example: localhost:8888
+
+                       -- click Save hostname
+
+                       -- your local site should be up and running
+
+
+
+
+
+
+
+
+
+
+
+
+
+
