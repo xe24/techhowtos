@@ -1,0 +1,17 @@
+SECURE COPY PROTOCOL (SCP)
+---
+
+--- Hostinger SCP Transfer
+    -- Description: Copy files from your local machine to hostinger
+
+    -- Prerequisite
+      -- A valid Hostinger hosting account
+
+    -- Usage:
+       -- port: 65002
+       -- Open terminal
+       -- command:
+          -- scp -P 65002 ./path/to/file username@[ftp-ip-address]:/home/[username]/domains/[domain]/public_html
+       -- Enter password
+       -- Hit Enter
+       -- Done

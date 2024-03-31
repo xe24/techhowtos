@@ -1,0 +1,53 @@
+NGROK
+---
+
+--- Overview
+    -- A tool that provides secure tunneling capabilities, allowing you to expose your local server to the
+       internet securely. It creates a secure tunnel from a public endpoint to a port on your local machine.
+
+--- Use cases
+    -- Local Development: Test web applications locally as if they're live.
+    -- Webhook Testing: Debug and receive real-time webhook payloads.
+    -- Client Demos: Share work with clients for review.
+
+--- Installation
+    -- Prerequisite:
+       -- ngrok account: sign up for a free account
+
+    -- MacOS
+       -- With your terminal opened type or copy and paste this command
+          -- > brew install ngrok/ngrok/ngrok
+          --  hit enter
+
+    -- Windows
+       -- With your command prompt opened type or copy and paste this command
+          -- > choco install ngrok
+          --  hit enter
+
+    -- MacOS
+       -- With your terminal opened copy and paste this command
+          -- > curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | \
+               sudo gpg --dearmor -o /etc/apt/keyrings/ngrok.gpg && \
+               echo "deb [signed-by=/etc/apt/keyrings/ngrok.gpg] https://ngrok-agent.s3.amazonaws.com buster main" | \
+               sudo tee /etc/apt/sources.list.d/ngrok.list && \
+               sudo apt update && sudo apt install ngrok
+
+          --  hit enter
+
+
+--- Connect your ngrok agent to your account
+    -- sign into your ngrok account
+       -- create ngrok authtoken
+          -- copy the generated authtoken
+             -- run this command: 
+                -- > ngrok config add-authtoken <TOKEN>
+             -- replace <TOKEN> with your ngrok token
+
+
+--- Start ngrok on your local machine
+    -- run: 
+       -- > ngrok http http://localhost:8080
+       -- NB: replace the port with yours
+
+
+
